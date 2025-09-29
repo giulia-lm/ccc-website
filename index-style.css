@@ -30,6 +30,7 @@
     --dark-text: #0f172a;
     --light-text: #FFFF;
     --blue-gradient: linear-gradient(180deg,rgba(0, 35, 125, 1) 22%, rgba(73, 98, 162, 1) 60%, rgba(255, 255, 255, 0) 100%);
+    --diagonal-gradient: linear-gradient(135deg, rgba(99, 102, 241, 0.4) 0%, rgba(139, 92, 246, 0.3) 100%);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
@@ -500,4 +501,173 @@ ul{
     flex-direction: column;
     padding: 5% 5% 2%;
     border-radius: 5% 5% 0% 0%;
+}
+ 
+
+.maps-section{
+  padding: 5% 10% 2% 5%;
+  width: 100%;
+  height: auto;
+}
+
+.section-title{ 
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+
+  font-family: "Passion One", sans-serif;
+  color: var(--primary-red);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.maps-container{
+  display: flex;
+  gap: 2rem;
+}
+
+.map{
+  background-color: var(--primary-red);
+  border-radius: 20% 20% / 20% 20%;
+  border: 50px solid var(--primary-red);
+}
+
+.map iframe{
+  width: 400px;
+  height: 300px;
+}
+
+.map:hover{
+ transform: translateY(-5px);
+ box-shadow: 12px 12px 2px 1px var(--primary-blue);
+}
+
+
+.map h2{
+  font-family: "Passion One", sans-serif;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.contact {
+  margin-top: 1.5rem;
+  text-align: center; /* centra todo el bloque */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;         
+  margin-top: 1rem;
+}
+
+.contact p{
+  font-family: "Passion One", sans-serif;
+  color: var(--light-text);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: center; 
+  flex-direction: column;
+
+
+}
+
+.phonecall {
+  height: 30px;
+  width: 30px;
+}
+
+.phones {
+  display: flex;
+  flex-direction: column; 
+  gap: 0.3rem;
+}
+
+.map a {
+  font-family: "Passion One", sans-serif;
+  color: var(--primary-blue);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-align: left; 
+}
+
+.map a:hover {
+  text-decoration: underline;
+}
+
+.about-us-section{
+  padding: 5% 10% 2% 5%;
+  width: 100%;
+  height: auto;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+
+  background-color: rgba(0, 35, 125, 0.3);
+  background-blend-mode: overlay;
+
+  position: relative;
+  overflow: hidden;
+
+  margin-bottom: 5px;
+
+}
+
+
+
+.about-us-section:nth-of-type(1) {
+  background-image: url('index-img/presc-w-teacher.jpg');
+}
+
+.about-us-section:nth-of-type(2) {
+  background-image: url('index-img/bandera.jpg');
+}
+
+.about-container p{
+ font-family: "Passion One", sans-serif;
+  color: var(--light-text);
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  text-align: left; 
+}
+
+.about-container h1{ 
+  flex-basis: 100%;
+  margin-bottom: 2rem;
+
+  font-family: "Passion One", sans-serif;
+  color: var(--primary-blue);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.about-container{
+  border: 20px solid var(--primary-red);
+  background-color: var(--primary-red);
+  border-radius: 20px;
+  width: 80%;
+  align-items: center;
+  bottom: 30%;
+  margin: auto;
+  margin-bottom: 30px;
+
 }
